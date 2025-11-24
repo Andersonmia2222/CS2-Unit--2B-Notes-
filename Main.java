@@ -49,6 +49,35 @@ if (i == 1) {
 }
 }
 
+// LOOOPS and STRINGS 
+// USE A LOOP TO iterate through each charcter 
+// in a string object(transversal)
+
+// use a FOR loop to visit every char 
+
+String name = "Mia";
+int finalIndex = name.length() -1;
+System.out.println("finalIndex" + finalIndex );
+
+//build a reversed String using loop
+String reversed =""; 
+for (int i = finalIndex; i>= 0; i--) {
+System.out,println("Current Index:" + i); 
+String currentLetter = name.substring(i, i +1); //char at index i
+System.out.println("Current Letter: " + currentLetter);
+reversed += currentLetter; // add char to reversed name 
+
+}
+System.out.println("Your name backwards:" + reversed); 
+// while loop can handle tasks other than when you know 
+// how many times to iterate 
+// EX) find and replace characters until all are replaced 
+
+
+
+
    } // end main method
 } // end class
+
+
 
